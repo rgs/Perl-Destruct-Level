@@ -26,6 +26,8 @@ Perl::Destruct::Level - Allow to change perl's destruct level
 
     use Perl::Destruct::Level level => 1;
 
+    my $current_destruct_level = Perl::Destruct::Level::get_destruct_level();
+
 =head1 DESCRIPTION
 
 =head1 AUTHOR

@@ -35,6 +35,6 @@ may redistribute it and/or modify it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-L<perlrun>
+L<perlrun>, L<perlhack>
 
 =cut

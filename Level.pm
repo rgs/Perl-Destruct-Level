@@ -20,7 +20,7 @@ __END__
 
 =head1 NAME
 
-Perl::Destruct::Level - Allow to change perl's destruct level
+Perl::Destruct::Level - Allow to change perl's destruction level
 
 =head1 SYNOPSIS
 
@@ -29,6 +29,21 @@ Perl::Destruct::Level - Allow to change perl's destruct level
     my $current_destruct_level = Perl::Destruct::Level::get_destruct_level();
 
 =head1 DESCRIPTION
+
+This module allows to change perl's internal I<destruction level>.
+
+The default value of the destruct level is 0; it means that perl won't
+bother destroying all its internal data structures, but let the OS do
+the cleanup for it at exit.
+
+For perls built with debugging support (C<-DDEBUGGING>), an environment
+variable C<PERL_DESTRUCT_LEVEL> allows to control the destruction level.
+This modules enables to modify it on non-debugging perls too.
+
+Relevant values recognized by perl are 1 and 2. Consult your source
+code to know exactly what they mean. Note that some embedded environments
+might extend the meaning of the destruction level for their own purposes:
+mod_perl does that, for example.
 
 =head1 CAVEATS
 

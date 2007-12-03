@@ -30,6 +30,10 @@ Perl::Destruct::Level - Allow to change perl's destruct level
 
 =head1 DESCRIPTION
 
+=head1 CAVEAT
+
+This module won't work when used from within an END block.
+
 =head1 AUTHOR
 
 Copyright (c) 2007 Rafael Garcia-Suarez. This program is free software; you

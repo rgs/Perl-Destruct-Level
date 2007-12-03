@@ -30,9 +30,15 @@ Perl::Destruct::Level - Allow to change perl's destruct level
 
 =head1 DESCRIPTION
 
-=head1 CAVEAT
+=head1 CAVEATS
 
 This module won't work when used from within an END block.
+
+Loading the C<threads> module will set the destruction level to 2. (This
+is to enable spawned threads to properly cleanup their objects.) Loading
+modules that load C<threads>, even if they don't spawn threads, will
+also set the destruction level to 2. (A common example of such a module
+is C<Test::Builder>.)
 
 =head1 AUTHOR
 

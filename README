@@ -1,0 +1,4 @@
+Perl::Destruct::Level - Allow to change perl's destruction level
+
+This simple perl module enables to set the perl interpreter's destruction
+level programatically, even on non-DEBUGGING perls.

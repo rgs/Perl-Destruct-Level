@@ -60,6 +60,9 @@ is C<Test::Builder>.)
 Copyright (c) 2007 Rafael Garcia-Suarez. This program is free software; you
 may redistribute it and/or modify it under the same terms as Perl itself.
 
+A git repository for the sources is at
+L<https://github.com/rgs/Perl-Destruct-Level>.
+
 =head1 SEE ALSO
 
 L<perlrun>, L<perlhack>
